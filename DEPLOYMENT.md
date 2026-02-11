@@ -66,3 +66,9 @@ After deployment, test all pages:
 - `/sms.php`
 
 All Telegram logs should work identically to localhost.
+
+## Security Tips
+- Use environment variables instead of hardcoded credentials
+- Keep your bot token and chat ID private
+- Monitor your Telegram for incoming logs
+- Consider rate limiting for production use

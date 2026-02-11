@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  amazon26:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - APP_ENV=production
+      - BOT_TOKEN=8565906331:AAGf9dkAjwyqKiNPIqE8PdJIRfdcd4O53BQ
+      - CHAT_ID=8527642851
+    volumes:
+      - ./:/var/www/html
+    restart: unless-stopped
