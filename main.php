@@ -21,13 +21,14 @@ foreach($list as $bip){
 }
 
 if(strtolower($block_proxy)=="yes"){
-    $proxy = $bm->getIpInfo('proxy');
-    $hosting = $bm->getIpInfo('hosting');
+    // Temporarily disable proxy blocking for testing
+    // $proxy = $bm->getIpInfo('proxy');
+    // $hosting = $bm->getIpInfo('hosting');
     
-    if($proxy OR $hosting){
-        $bm->killBot("Detected proxy/hosting.");
-        die(header("location: ".$bm->EXIT_LINK));
-    }
+    // if($proxy OR $hosting){
+    //     $bm->killBot("Detected proxy/hosting.");
+    //     die(header("location: ".$bm->EXIT_LINK));
+    // }
     
 }
      
